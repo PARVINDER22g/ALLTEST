@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ऑनलाइन मॉक टेस्ट</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="quiz-container">
+        <h2>ऑनलाइन मॉक टेस्ट</h2>
+        
+        <div class="timer">समय शेष: <span id="time">20:00</span></div>
+
+        <div id="quiz">
+            <div id="question" class="question">प्रश्न लोड हो रहा है...</div>
+            <div id="options" class="options"></div>
+        </div>
+
+        <button id="next-btn" onclick="nextQuestion()">अगला प्रश्न</button>
+
+        <div id="result" class="result hidden">
+            <h3>टेस्ट समाप्त हुआ!</h3>
+            <p id="score-text"></p>
+            <button onclick="location.reload()">दोबारा प्रयास करें</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
